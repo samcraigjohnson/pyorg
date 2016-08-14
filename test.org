@@ -1,0 +1,22 @@
+#+TODO: TODO WORKING | DONE(!)
+
+* Work Tasks
+
+** TODO My test todo
+** TODO Figure out what do for non-subscriber subscribers (web hooks)
+** TODO Cron job to fix data inconsistancies
+
+
+
+* Personal Tasks
+
+** TODO Talk to paddle board people about rentals
+
+** WORKING Rollover 401k [1/2]
+   - [X] check out captin 401k site
+   - [ ] fill out fidelity form
+
+** TODO Figure out car insurance
+** TODO Call dad about selling car
+** TODO make sure energy bill is on auto paying
+** TODO schedule relocubes
