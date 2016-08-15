@@ -29,12 +29,18 @@ class Location(object):
         for i, line in enumerate(lines):
 
             # TODO handle at_top == False
-            if found_heading and self.get_level(line) > 0:
-                return i-1, level+1
+            if found_heading:
+                if self.at_top and self.get_level(line) > 0:
+                    return i, level+1
+                elif not self.at_top and self.get_level(line) == level:
+                    return i-1, level+1
 
-            if self.heading in line:
+            if self.heading in line and self.get_level(line) > 0:
                 found_heading = True
                 level = self.get_level(line)
+
+        if level > 0:
+            return len(lines) - 1, level+1
 
         raise "Location not found"
 
